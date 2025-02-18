@@ -26,24 +26,36 @@ namespace CambioHorVerZebra411.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public string horizontal {
+        public string Horizontal {
             get {
-                return ((string)(this["horizontal"]));
+                return ((string)(this["Horizontal"]));
             }
             set {
-                this["horizontal"] = value;
+                this["Horizontal"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public string vertical {
+        public string Vertical {
             get {
-                return ((string)(this["vertical"]));
+                return ((string)(this["Vertical"]));
             }
             set {
-                this["vertical"] = value;
+                this["Vertical"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string Contraste {
+            get {
+                return ((string)(this["Contraste"]));
+            }
+            set {
+                this["Contraste"] = value;
             }
         }
     }

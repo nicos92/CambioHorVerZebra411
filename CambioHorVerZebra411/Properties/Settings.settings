@@ -2,10 +2,13 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CambioHorVerZebra411.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="horizontal" Type="System.String" Scope="User">
+    <Setting Name="Horizontal" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="vertical" Type="System.String" Scope="User">
+    <Setting Name="Vertical" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Contraste" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
