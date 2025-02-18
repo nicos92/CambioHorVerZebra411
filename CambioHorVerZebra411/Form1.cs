@@ -36,6 +36,8 @@ namespace CambioHorVerZebra411
         {
             LblHorizontal.Text = Properties.Settings.Default.horizontal;
             LblVertical.Text = Properties.Settings.Default.vertical;
+            TrackBarHorizontal.Value = Convert.ToInt32(Properties.Settings.Default.horizontal);
+            TrackBarVertical.Value = Convert.ToInt32(Properties.Settings.Default.vertical);
 
         }
 
