@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CambioHorVerZebra411.Properties {
+namespace Nicos92ZebraZT.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -56,6 +56,18 @@ namespace CambioHorVerZebra411.Properties {
             }
             set {
                 this["Contraste"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public string Velocidad {
+            get {
+                return ((string)(this["Velocidad"]));
+            }
+            set {
+                this["Velocidad"] = value;
             }
         }
     }

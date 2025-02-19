@@ -36,8 +36,8 @@ namespace Common.Cache
         private readonly Color cyan = Color.FromArgb(255, 23, 162, 184);
         private readonly Color verdeConsola = Color.FromArgb(255, 0, 204, 0);
 
-        private readonly Color purpleBootstrap = Color.FromArgb(255,101, 40, 224);
-        private readonly Color dangerBootstrap = Color.FromArgb(255,187, 45, 59);
+        private readonly Color purpleBootstrap = Color.FromArgb(255, 101, 40, 224);
+        private readonly Color dangerBootstrap = Color.FromArgb(255, 187, 45, 59);
         private readonly Color successBootstrap = Color.FromArgb(255, 21, 115, 71);
         private readonly Color infoBootstrap = Color.FromArgb(255, 49, 210, 242);
 

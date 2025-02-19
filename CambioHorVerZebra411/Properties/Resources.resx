@@ -121,10 +121,16 @@
   <data name="icons8flechaampliararriba64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8flechaampliararriba64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8enviado50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8enviado50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8flechaarriba26" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8flechaarriba26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8flechaabajo26" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8flechaabajo26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8enviado5025" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8enviado5025.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

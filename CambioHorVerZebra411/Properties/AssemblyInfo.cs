@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("CambioHorVerZebra411")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Nicos92 Zebra ZT")]
+[assembly: AssemblyDescription("aplicacion para configurar aspectos basicos de impresoras termicas Zebra ZT")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CambioHorVerZebra411")]
+[assembly: AssemblyCompany("Sandoval Nicolas Salomon")]
+[assembly: AssemblyProduct("Nicos92 Zebra ZT")]
 [assembly: AssemblyCopyright("Copyright ©  2025")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Sandoval Nicolas Salomon")]
 [assembly: AssemblyCulture("")]
 
 // Si establece ComVisible en false, los tipos de este ensamblado no estarán visibles 
