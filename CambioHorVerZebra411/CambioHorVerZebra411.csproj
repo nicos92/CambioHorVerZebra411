@@ -127,6 +127,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons8cebra6432.ico" />
+    <None Include="Resources\icons8A5010.png" />
+    <None Include="Resources\icons8L5010.png" />
+    <None Include="Resources\icons8eliminar3010.png" />
     <None Include="Resources\icons8enviado5025.png" />
     <None Include="Resources\icons8enviado50.png" />
     <None Include="Resources\icons8flechaabajo26.png" />

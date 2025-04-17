@@ -63,6 +63,26 @@ namespace Nicos92ZebraZT.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8A5010 {
+            get {
+                object obj = ResourceManager.GetObject("icons8A5010", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8eliminar3010 {
+            get {
+                object obj = ResourceManager.GetObject("icons8eliminar3010", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8enviado50 {
             get {
                 object obj = ResourceManager.GetObject("icons8enviado50", resourceCulture);
@@ -106,6 +126,16 @@ namespace Nicos92ZebraZT.Properties {
         internal static System.Drawing.Bitmap icons8flechaarriba26 {
             get {
                 object obj = ResourceManager.GetObject("icons8flechaarriba26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8L5010 {
+            get {
+                object obj = ResourceManager.GetObject("icons8L5010", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

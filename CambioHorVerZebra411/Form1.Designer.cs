@@ -30,16 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.TableLayoutPanelMain = new System.Windows.Forms.TableLayoutPanel();
             this.LblTitulo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.TxtHorizontal = new Controles.NSTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.TxtContraste = new Controles.NSTextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.TxtVertical = new Controles.NSTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.TxtVelocidad = new Controles.NSTextBox();
             this.PrintDialog = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.TimerHorizontal = new System.Windows.Forms.Timer(this.components);
@@ -48,56 +52,52 @@
             this.TimerVelocidad = new System.Windows.Forms.Timer(this.components);
             this.BtnBajarHor = new Controles.NSButton();
             this.BtnSubirHor = new Controles.NSButton();
-            this.TxtHorizontal = new Controles.NSTextBox();
             this.BtnBajarContraste = new Controles.NSButton();
             this.BtnSubirContraste = new Controles.NSButton();
-            this.TxtContraste = new Controles.NSTextBox();
             this.BtnBajarVer = new Controles.NSButton();
             this.BtnSubirVer = new Controles.NSButton();
-            this.TxtVertical = new Controles.NSTextBox();
             this.BtnBajarVel = new Controles.NSButton();
             this.BtnSubirVel = new Controles.NSButton();
-            this.TxtVelocidad = new Controles.NSTextBox();
             this.BtnCambiar = new Controles.NSButton();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.TableLayoutPanelMain.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // TableLayoutPanelMain
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.Controls.Add(this.LblTitulo, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel3, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.BtnCambiar, 1, 9);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(8, 8);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 10;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(368, 445);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.TableLayoutPanelMain.ColumnCount = 3;
+            this.TableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.TableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.TableLayoutPanelMain.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.TableLayoutPanelMain.Controls.Add(this.LblTitulo, 1, 0);
+            this.TableLayoutPanelMain.Controls.Add(this.label1, 1, 5);
+            this.TableLayoutPanelMain.Controls.Add(this.label2, 1, 7);
+            this.TableLayoutPanelMain.Controls.Add(this.tableLayoutPanel2, 1, 6);
+            this.TableLayoutPanelMain.Controls.Add(this.label3, 1, 1);
+            this.TableLayoutPanelMain.Controls.Add(this.tableLayoutPanel4, 1, 2);
+            this.TableLayoutPanelMain.Controls.Add(this.tableLayoutPanel3, 1, 8);
+            this.TableLayoutPanelMain.Controls.Add(this.label4, 1, 3);
+            this.TableLayoutPanelMain.Controls.Add(this.tableLayoutPanel5, 1, 4);
+            this.TableLayoutPanelMain.Controls.Add(this.BtnCambiar, 1, 9);
+            this.TableLayoutPanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TableLayoutPanelMain.Location = new System.Drawing.Point(0, 0);
+            this.TableLayoutPanelMain.Name = "TableLayoutPanelMain";
+            this.TableLayoutPanelMain.RowCount = 10;
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.TableLayoutPanelMain.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.TableLayoutPanelMain.Size = new System.Drawing.Size(384, 453);
+            this.TableLayoutPanelMain.TabIndex = 0;
             // 
             // LblTitulo
             // 
@@ -105,7 +105,7 @@
             this.LblTitulo.AutoSize = true;
             this.LblTitulo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblTitulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblTitulo.Location = new System.Drawing.Point(72, 16);
+            this.LblTitulo.Location = new System.Drawing.Point(80, 16);
             this.LblTitulo.Margin = new System.Windows.Forms.Padding(3, 16, 3, 0);
             this.LblTitulo.Name = "LblTitulo";
             this.LblTitulo.Size = new System.Drawing.Size(222, 25);
@@ -118,10 +118,10 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(21, 223);
+            this.label1.Location = new System.Drawing.Point(22, 223);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 16, 3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(325, 21);
+            this.label1.Size = new System.Drawing.Size(339, 21);
             this.label1.TabIndex = 1;
             this.label1.Text = "Desplazamiento Horizontal de Etiqueta";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -132,10 +132,10 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(21, 306);
+            this.label2.Location = new System.Drawing.Point(22, 306);
             this.label2.Margin = new System.Windows.Forms.Padding(3, 16, 3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(325, 21);
+            this.label2.Size = new System.Drawing.Size(339, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "Desplazamiento Vertical de Etiqueta";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -150,13 +150,37 @@
             this.tableLayoutPanel2.Controls.Add(this.BtnSubirHor, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.TxtHorizontal, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(21, 247);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(22, 247);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(325, 40);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(339, 40);
             this.tableLayoutPanel2.TabIndex = 9;
+            // 
+            // TxtHorizontal
+            // 
+            this.TxtHorizontal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(30)))), ((int)(((byte)(34)))));
+            this.TxtHorizontal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.TxtHorizontal.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(115)))), ((int)(((byte)(71)))));
+            this.TxtHorizontal.BorderSize = 2;
+            this.TxtHorizontal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtHorizontal.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.TxtHorizontal.Location = new System.Drawing.Point(123, 4);
+            this.TxtHorizontal.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtHorizontal.Multiline = false;
+            this.TxtHorizontal.Name = "TxtHorizontal";
+            this.TxtHorizontal.Padding = new System.Windows.Forms.Padding(7);
+            this.TxtHorizontal.PasswordChar = false;
+            this.TxtHorizontal.ReadOnly = false;
+            this.TxtHorizontal.SelectionLength = 0;
+            this.TxtHorizontal.SelectionStart = 0;
+            this.TxtHorizontal.Size = new System.Drawing.Size(91, 36);
+            this.TxtHorizontal.TabIndex = 10;
+            this.TxtHorizontal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtHorizontal.UnderLinesStyle = false;
+            this.TxtHorizontal._TextChanged += new System.EventHandler(this.TxtHorizontal__TextChanged);
+            this.TxtHorizontal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtHorizontal_KeyPress);
             // 
             // label3
             // 
@@ -164,10 +188,10 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(21, 57);
+            this.label3.Location = new System.Drawing.Point(22, 57);
             this.label3.Margin = new System.Windows.Forms.Padding(3, 16, 3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(325, 21);
+            this.label3.Size = new System.Drawing.Size(339, 21);
             this.label3.TabIndex = 11;
             this.label3.Text = "Contraste";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -182,13 +206,37 @@
             this.tableLayoutPanel4.Controls.Add(this.BtnSubirContraste, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.TxtContraste, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(21, 81);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(22, 81);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(325, 40);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(339, 40);
             this.tableLayoutPanel4.TabIndex = 12;
+            // 
+            // TxtContraste
+            // 
+            this.TxtContraste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(30)))), ((int)(((byte)(34)))));
+            this.TxtContraste.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.TxtContraste.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(115)))), ((int)(((byte)(71)))));
+            this.TxtContraste.BorderSize = 2;
+            this.TxtContraste.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtContraste.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.TxtContraste.Location = new System.Drawing.Point(123, 4);
+            this.TxtContraste.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtContraste.Multiline = false;
+            this.TxtContraste.Name = "TxtContraste";
+            this.TxtContraste.Padding = new System.Windows.Forms.Padding(7);
+            this.TxtContraste.PasswordChar = false;
+            this.TxtContraste.ReadOnly = false;
+            this.TxtContraste.SelectionLength = 0;
+            this.TxtContraste.SelectionStart = 0;
+            this.TxtContraste.Size = new System.Drawing.Size(91, 36);
+            this.TxtContraste.TabIndex = 10;
+            this.TxtContraste.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtContraste.UnderLinesStyle = false;
+            this.TxtContraste._TextChanged += new System.EventHandler(this.TxtContraste__TextChanged);
+            this.TxtContraste.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtContraste_KeyPress);
             // 
             // tableLayoutPanel3
             // 
@@ -200,12 +248,36 @@
             this.tableLayoutPanel3.Controls.Add(this.BtnSubirVer, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.TxtVertical, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(21, 330);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(22, 330);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(325, 40);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(339, 40);
             this.tableLayoutPanel3.TabIndex = 10;
+            // 
+            // TxtVertical
+            // 
+            this.TxtVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(30)))), ((int)(((byte)(34)))));
+            this.TxtVertical.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.TxtVertical.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(115)))), ((int)(((byte)(71)))));
+            this.TxtVertical.BorderSize = 2;
+            this.TxtVertical.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVertical.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.TxtVertical.Location = new System.Drawing.Point(123, 4);
+            this.TxtVertical.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVertical.Multiline = false;
+            this.TxtVertical.Name = "TxtVertical";
+            this.TxtVertical.Padding = new System.Windows.Forms.Padding(7);
+            this.TxtVertical.PasswordChar = false;
+            this.TxtVertical.ReadOnly = false;
+            this.TxtVertical.SelectionLength = 0;
+            this.TxtVertical.SelectionStart = 0;
+            this.TxtVertical.Size = new System.Drawing.Size(91, 36);
+            this.TxtVertical.TabIndex = 10;
+            this.TxtVertical.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtVertical.UnderLinesStyle = false;
+            this.TxtVertical._TextChanged += new System.EventHandler(this.TxtVertical__TextChanged);
+            this.TxtVertical.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVertical_KeyPress);
             // 
             // label4
             // 
@@ -213,10 +285,10 @@
             this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(21, 140);
+            this.label4.Location = new System.Drawing.Point(22, 140);
             this.label4.Margin = new System.Windows.Forms.Padding(3, 16, 3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(325, 21);
+            this.label4.Size = new System.Drawing.Size(339, 21);
             this.label4.TabIndex = 13;
             this.label4.Text = "Velocidad";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -231,13 +303,39 @@
             this.tableLayoutPanel5.Controls.Add(this.BtnSubirVel, 2, 0);
             this.tableLayoutPanel5.Controls.Add(this.TxtVelocidad, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(21, 164);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(22, 164);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(325, 40);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(339, 40);
             this.tableLayoutPanel5.TabIndex = 14;
+            // 
+            // TxtVelocidad
+            // 
+            this.TxtVelocidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(30)))), ((int)(((byte)(34)))));
+            this.TxtVelocidad.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
+            this.TxtVelocidad.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(115)))), ((int)(((byte)(71)))));
+            this.TxtVelocidad.BorderSize = 2;
+            this.TxtVelocidad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtVelocidad.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.TxtVelocidad.Location = new System.Drawing.Point(123, 4);
+            this.TxtVelocidad.Margin = new System.Windows.Forms.Padding(4);
+            this.TxtVelocidad.Multiline = false;
+            this.TxtVelocidad.Name = "TxtVelocidad";
+            this.TxtVelocidad.Padding = new System.Windows.Forms.Padding(7);
+            this.TxtVelocidad.PasswordChar = false;
+            this.TxtVelocidad.ReadOnly = false;
+            this.TxtVelocidad.SelectionLength = 0;
+            this.TxtVelocidad.SelectionStart = 0;
+            this.TxtVelocidad.Size = new System.Drawing.Size(91, 36);
+            this.TxtVelocidad.TabIndex = 10;
+            this.TxtVelocidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtVelocidad.UnderLinesStyle = false;
+            this.TxtVelocidad._TextChanged += new System.EventHandler(this.TxtVelocidad__TextChanged);
+            this.TxtVelocidad.Enter += new System.EventHandler(this.TxtVelocidad_Enter);
+            this.TxtVelocidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVelocidad_KeyPress);
+            this.TxtVelocidad.Validating += new System.ComponentModel.CancelEventHandler(this.TxtVelocidad_Validating);
             // 
             // PrintDialog
             // 
@@ -276,7 +374,7 @@
             this.BtnBajarHor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBajarHor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.BtnBajarHor.Image = global::Nicos92ZebraZT.Properties.Resources.icons8flechaabajo26;
-            this.BtnBajarHor.Location = new System.Drawing.Point(75, 3);
+            this.BtnBajarHor.Location = new System.Drawing.Point(82, 3);
             this.BtnBajarHor.Name = "BtnBajarHor";
             this.BtnBajarHor.Size = new System.Drawing.Size(34, 34);
             this.BtnBajarHor.TabIndex = 11;
@@ -299,7 +397,7 @@
             this.BtnSubirHor.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSubirHor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.BtnSubirHor.Image = global::Nicos92ZebraZT.Properties.Resources.icons8flechaarriba26;
-            this.BtnSubirHor.Location = new System.Drawing.Point(214, 3);
+            this.BtnSubirHor.Location = new System.Drawing.Point(221, 3);
             this.BtnSubirHor.Name = "BtnSubirHor";
             this.BtnSubirHor.Size = new System.Drawing.Size(34, 34);
             this.BtnSubirHor.TabIndex = 9;
@@ -308,30 +406,6 @@
             this.BtnSubirHor.Click += new System.EventHandler(this.BtnSubirHor_Click);
             this.BtnSubirHor.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnSubirHor_MouseDown);
             this.BtnSubirHor.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnSubirHor_MouseUp);
-            // 
-            // TxtHorizontal
-            // 
-            this.TxtHorizontal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(30)))), ((int)(((byte)(34)))));
-            this.TxtHorizontal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.TxtHorizontal.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(115)))), ((int)(((byte)(71)))));
-            this.TxtHorizontal.BorderSize = 2;
-            this.TxtHorizontal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtHorizontal.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.TxtHorizontal.Location = new System.Drawing.Point(116, 4);
-            this.TxtHorizontal.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtHorizontal.Multiline = false;
-            this.TxtHorizontal.Name = "TxtHorizontal";
-            this.TxtHorizontal.Padding = new System.Windows.Forms.Padding(7);
-            this.TxtHorizontal.PasswordChar = false;
-            this.TxtHorizontal.ReadOnly = false;
-            this.TxtHorizontal.SelectionLength = 0;
-            this.TxtHorizontal.SelectionStart = 0;
-            this.TxtHorizontal.Size = new System.Drawing.Size(91, 36);
-            this.TxtHorizontal.TabIndex = 10;
-            this.TxtHorizontal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TxtHorizontal.UnderLinesStyle = false;
-            this.TxtHorizontal._TextChanged += new System.EventHandler(this.TxtHorizontal__TextChanged);
-            this.TxtHorizontal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtHorizontal_KeyPress);
             // 
             // BtnBajarContraste
             // 
@@ -346,7 +420,7 @@
             this.BtnBajarContraste.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBajarContraste.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.BtnBajarContraste.Image = global::Nicos92ZebraZT.Properties.Resources.icons8flechaabajo26;
-            this.BtnBajarContraste.Location = new System.Drawing.Point(75, 3);
+            this.BtnBajarContraste.Location = new System.Drawing.Point(82, 3);
             this.BtnBajarContraste.Name = "BtnBajarContraste";
             this.BtnBajarContraste.Size = new System.Drawing.Size(34, 34);
             this.BtnBajarContraste.TabIndex = 11;
@@ -369,7 +443,7 @@
             this.BtnSubirContraste.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSubirContraste.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.BtnSubirContraste.Image = global::Nicos92ZebraZT.Properties.Resources.icons8flechaarriba26;
-            this.BtnSubirContraste.Location = new System.Drawing.Point(214, 3);
+            this.BtnSubirContraste.Location = new System.Drawing.Point(221, 3);
             this.BtnSubirContraste.Name = "BtnSubirContraste";
             this.BtnSubirContraste.Size = new System.Drawing.Size(34, 34);
             this.BtnSubirContraste.TabIndex = 9;
@@ -378,30 +452,6 @@
             this.BtnSubirContraste.Click += new System.EventHandler(this.BtnSubirContraste_Click);
             this.BtnSubirContraste.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnSubirContraste_MouseDown);
             this.BtnSubirContraste.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnSubirContraste_MouseUp);
-            // 
-            // TxtContraste
-            // 
-            this.TxtContraste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(30)))), ((int)(((byte)(34)))));
-            this.TxtContraste.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.TxtContraste.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(115)))), ((int)(((byte)(71)))));
-            this.TxtContraste.BorderSize = 2;
-            this.TxtContraste.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtContraste.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.TxtContraste.Location = new System.Drawing.Point(116, 4);
-            this.TxtContraste.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtContraste.Multiline = false;
-            this.TxtContraste.Name = "TxtContraste";
-            this.TxtContraste.Padding = new System.Windows.Forms.Padding(7);
-            this.TxtContraste.PasswordChar = false;
-            this.TxtContraste.ReadOnly = false;
-            this.TxtContraste.SelectionLength = 0;
-            this.TxtContraste.SelectionStart = 0;
-            this.TxtContraste.Size = new System.Drawing.Size(91, 36);
-            this.TxtContraste.TabIndex = 10;
-            this.TxtContraste.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TxtContraste.UnderLinesStyle = false;
-            this.TxtContraste._TextChanged += new System.EventHandler(this.TxtContraste__TextChanged);
-            this.TxtContraste.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtContraste_KeyPress);
             // 
             // BtnBajarVer
             // 
@@ -416,7 +466,7 @@
             this.BtnBajarVer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBajarVer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.BtnBajarVer.Image = global::Nicos92ZebraZT.Properties.Resources.icons8flechaabajo26;
-            this.BtnBajarVer.Location = new System.Drawing.Point(75, 3);
+            this.BtnBajarVer.Location = new System.Drawing.Point(82, 3);
             this.BtnBajarVer.Name = "BtnBajarVer";
             this.BtnBajarVer.Size = new System.Drawing.Size(34, 34);
             this.BtnBajarVer.TabIndex = 11;
@@ -439,7 +489,7 @@
             this.BtnSubirVer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSubirVer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.BtnSubirVer.Image = global::Nicos92ZebraZT.Properties.Resources.icons8flechaarriba26;
-            this.BtnSubirVer.Location = new System.Drawing.Point(214, 3);
+            this.BtnSubirVer.Location = new System.Drawing.Point(221, 3);
             this.BtnSubirVer.Name = "BtnSubirVer";
             this.BtnSubirVer.Size = new System.Drawing.Size(34, 34);
             this.BtnSubirVer.TabIndex = 9;
@@ -448,30 +498,6 @@
             this.BtnSubirVer.Click += new System.EventHandler(this.BtnSubirVer_Click);
             this.BtnSubirVer.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnSubirVer_MouseDown);
             this.BtnSubirVer.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnSubirVer_MouseUp);
-            // 
-            // TxtVertical
-            // 
-            this.TxtVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(30)))), ((int)(((byte)(34)))));
-            this.TxtVertical.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.TxtVertical.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(115)))), ((int)(((byte)(71)))));
-            this.TxtVertical.BorderSize = 2;
-            this.TxtVertical.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVertical.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.TxtVertical.Location = new System.Drawing.Point(116, 4);
-            this.TxtVertical.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVertical.Multiline = false;
-            this.TxtVertical.Name = "TxtVertical";
-            this.TxtVertical.Padding = new System.Windows.Forms.Padding(7);
-            this.TxtVertical.PasswordChar = false;
-            this.TxtVertical.ReadOnly = false;
-            this.TxtVertical.SelectionLength = 0;
-            this.TxtVertical.SelectionStart = 0;
-            this.TxtVertical.Size = new System.Drawing.Size(91, 36);
-            this.TxtVertical.TabIndex = 10;
-            this.TxtVertical.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TxtVertical.UnderLinesStyle = false;
-            this.TxtVertical._TextChanged += new System.EventHandler(this.TxtVertical__TextChanged);
-            this.TxtVertical.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVertical_KeyPress);
             // 
             // BtnBajarVel
             // 
@@ -486,7 +512,7 @@
             this.BtnBajarVel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBajarVel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.BtnBajarVel.Image = global::Nicos92ZebraZT.Properties.Resources.icons8flechaabajo26;
-            this.BtnBajarVel.Location = new System.Drawing.Point(75, 3);
+            this.BtnBajarVel.Location = new System.Drawing.Point(82, 3);
             this.BtnBajarVel.Name = "BtnBajarVel";
             this.BtnBajarVel.Size = new System.Drawing.Size(34, 34);
             this.BtnBajarVel.TabIndex = 11;
@@ -509,7 +535,7 @@
             this.BtnSubirVel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSubirVel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.BtnSubirVel.Image = global::Nicos92ZebraZT.Properties.Resources.icons8flechaarriba26;
-            this.BtnSubirVel.Location = new System.Drawing.Point(214, 3);
+            this.BtnSubirVel.Location = new System.Drawing.Point(221, 3);
             this.BtnSubirVel.Name = "BtnSubirVel";
             this.BtnSubirVel.Size = new System.Drawing.Size(34, 34);
             this.BtnSubirVel.TabIndex = 9;
@@ -518,32 +544,6 @@
             this.BtnSubirVel.Click += new System.EventHandler(this.BtnSubirVel_Click);
             this.BtnSubirVel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BtnSubirVel_MouseDown);
             this.BtnSubirVel.MouseUp += new System.Windows.Forms.MouseEventHandler(this.BtnSubirVel_MouseUp);
-            // 
-            // TxtVelocidad
-            // 
-            this.TxtVelocidad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(30)))), ((int)(((byte)(34)))));
-            this.TxtVelocidad.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            this.TxtVelocidad.BorderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(115)))), ((int)(((byte)(71)))));
-            this.TxtVelocidad.BorderSize = 2;
-            this.TxtVelocidad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtVelocidad.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.TxtVelocidad.Location = new System.Drawing.Point(116, 4);
-            this.TxtVelocidad.Margin = new System.Windows.Forms.Padding(4);
-            this.TxtVelocidad.Multiline = false;
-            this.TxtVelocidad.Name = "TxtVelocidad";
-            this.TxtVelocidad.Padding = new System.Windows.Forms.Padding(7);
-            this.TxtVelocidad.PasswordChar = false;
-            this.TxtVelocidad.ReadOnly = false;
-            this.TxtVelocidad.SelectionLength = 0;
-            this.TxtVelocidad.SelectionStart = 0;
-            this.TxtVelocidad.Size = new System.Drawing.Size(91, 36);
-            this.TxtVelocidad.TabIndex = 10;
-            this.TxtVelocidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TxtVelocidad.UnderLinesStyle = false;
-            this.TxtVelocidad._TextChanged += new System.EventHandler(this.TxtVelocidad__TextChanged);
-            this.TxtVelocidad.Enter += new System.EventHandler(this.TxtVelocidad_Enter);
-            this.TxtVelocidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtVelocidad_KeyPress);
-            this.TxtVelocidad.Validating += new System.ComponentModel.CancelEventHandler(this.TxtVelocidad_Validating);
             // 
             // BtnCambiar
             // 
@@ -559,7 +559,7 @@
             this.BtnCambiar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.BtnCambiar.Image = global::Nicos92ZebraZT.Properties.Resources.icons8enviado5025;
             this.BtnCambiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCambiar.Location = new System.Drawing.Point(108, 384);
+            this.BtnCambiar.Location = new System.Drawing.Point(116, 388);
             this.BtnCambiar.Name = "BtnCambiar";
             this.BtnCambiar.Size = new System.Drawing.Size(150, 49);
             this.BtnCambiar.TabIndex = 15;
@@ -575,7 +575,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(37)))), ((int)(((byte)(42)))));
             this.ClientSize = new System.Drawing.Size(384, 461);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.TableLayoutPanelMain);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -583,12 +583,12 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormMain";
-            this.Padding = new System.Windows.Forms.Padding(8);
+            this.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NicoS92 Zebra ZT";
             this.Load += new System.EventHandler(this.FormMain_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.TableLayoutPanelMain.ResumeLayout(false);
+            this.TableLayoutPanelMain.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -599,7 +599,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel TableLayoutPanelMain;
         private System.Windows.Forms.Label LblTitulo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
